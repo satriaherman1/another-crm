@@ -20,28 +20,88 @@
         overflow-x: hidden;
       }
 
+      .menu-button.w-nav-button {
+        margin-left: auto;
+        margin-top: 0;
+      }
+
+      img.image {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
       nav.nav-menu {
         position: relative;
-
+        top: 0;
+        right: -36%;
         width: 100%;
+        margin: 29px 0;
+        display: flex;
+        align-items: center;
       }
 
       nav.nav-menu > a {
         position: unset;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+      }
+      nav.nav-menu > a:nth-child(4),
+      nav.nav-menu > a:nth-child(5) {
+        position: absolute;
       }
 
       .div-block-4 {
         margin-left: 0;
       }
 
+      div.solving-problem-section {
+        margin: 10vh 0;
+      }
+
+      div.solving-problem-section a {
+        margin-top: 0px;
+      }
+
+      div.solving-problem-section h2.heading-5 {
+        margin-top: 10px;
+      }
+
+      /* create-task */
+      .create-task-section {
+        flex-direction: column-reverse;
+      }
+
+      .create-task-section h2.heading-5 {
+        margin-top: 10px;
+      }
+
       @media screen and (min-width: 768px) {
         .div-block-4 {
           margin-left: 54px;
+        }
+        div.solving-problem-section {
+          margin: 40vh 0;
+          align-items: center;
+        }
+
+        div.solving-problem-section a {
+          margin-top: 120px;
+        }
+
+        div.solving-problem-section h2.heading-5 {
+          margin-top: 0px;
         }
       }
       @media screen and (min-width: 980px) {
         .div-block-4 {
           margin-left: -240px;
+        }
+
+        div.solving-problem-section {
+          margin: 20vh 0;
+          flex-direction: column;
+          /* display: flex; */
         }
       }
     </style>
@@ -50,7 +110,7 @@
   </head>
   <body class="body">
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
-      <div class="container w-container" style="display: flex">
+      <div class="container w-container" style="display: flex; align-items: center">
         <a href="#" class="brand w-nav-brand"
           ><img src="https://uploads-ssl.webflow.com/625d6d6c3e0c4b616bf35453/625d6d6c3e0c4b8127f3545e_logo%20(1).png" loading="lazy" width="220" alt="" class="image"
         /></a>
@@ -97,7 +157,7 @@
       </div>
     </div>
     <div class="wf-section">
-      <div class="w-layout-grid grid">
+      <div class="w-layout-grid grid solving-problem-section">
         <div id="w-node-a5878a8b-471b-f761-9542-03c08987f37d-a6f35457">
           <img
             src="https://uploads-ssl.webflow.com/625d6d6c3e0c4b616bf35453/625d6d6c3e0c4b302ef35469_img_sec2.png"
@@ -109,6 +169,7 @@
             "
             alt=""
             class="image-5"
+            style="margin-top: 0"
           />
         </div>
         <div id="w-node-_7c675dec-4a5d-f558-4fa4-7bb0af87e0c6-a6f35457" class="div-section-2">
@@ -160,7 +221,7 @@
       />
     </header>
     <div class="wf-section">
-      <div class="w-layout-grid grid">
+      <div class="w-layout-grid grid create-task-section">
         <div id="w-node-_4c05171d-5784-ef40-8633-4e9173b72555-a6f35457" class="div-block-4-copy">
           <div>
             <h2 class="heading-5">
